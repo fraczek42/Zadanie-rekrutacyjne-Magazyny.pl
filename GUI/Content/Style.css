@@ -1,0 +1,50 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('../Stock/magazyny.jpg');
+    background-size: cover;
+    color: white;
+}
+.loginbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background: rgb(0,0,0,0.9);
+    border-radius: 20px 0;
+}
+.text-with-gardient {
+    background: linear-gradient(20deg, #7846FF, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.text-box {
+    padding-bottom: 10px;
+}
+.textbox {
+    height: 20px;
+}
+.btn_login {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.btnlogin {
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(20deg, #7846FF, red);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
