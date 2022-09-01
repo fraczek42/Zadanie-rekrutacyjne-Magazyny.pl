@@ -19,7 +19,7 @@
     border-radius: 20px 0;
 }
 .text-with-gardient {
-    background: linear-gradient(20deg, #7846FF, red);
+    background: linear-gradient(318deg, rgba(34,53,195,1) 0%, rgba(219,142,40,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -43,7 +43,7 @@
 .btnlogin {
     width: 120px;
     height: 35px;
-    background: linear-gradient(20deg, #7846FF, red);
+    background: linear-gradient(318deg, rgba(34,53,195,1) 0%, rgba(219,142,40,1) 100%);
     font-size: 20px;
     text-align: center;
     border-radius: 5px;
