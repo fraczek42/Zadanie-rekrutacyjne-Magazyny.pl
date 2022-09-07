@@ -14,7 +14,10 @@ namespace LoginSystem
         public static void Login(string username, string password)
         {
             DataTable dt = new DataTable();
-            string query = "SELECT login_user, password_user FROM login_user WHERE login_user = @username AND password_user = @password;";
+            //string query = "SELECT login_user, password_user,  FROM login_user WHERE login_user = @username AND password_user = @password;";
+            string query = "SELECT data_user.name_user, data_user.position_user, login_user.login_user, login_user.password_user " +
+                           "FROM login_user INNER JOIN data_user ON id_user_fk = data_user.id_user" +
+                           "WHERE login_user = @username AND password_user = @password";
             NpgsqlCommand cmd = new NpgsqlCommand(query);
             cmd.Parameters.AddWithValue("username", username);
             cmd.Parameters.AddWithValue("password", password);
@@ -24,7 +27,10 @@ namespace LoginSystem
             if (dt.Rows.Count == 0)
                 return;
 
-
+            MySession.Current.Login = username;
+            MySession.Current.Name = dt.Rows[0]["name_user"].ToString();
+            MySession.Current.Position = dt.Rows[0]["position_user"].ToString();
+            MySession.Current.IsLogged = true;
         }
     }
 }
