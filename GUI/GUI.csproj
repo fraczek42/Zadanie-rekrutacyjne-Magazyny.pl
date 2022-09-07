@@ -72,8 +72,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\AddPart.aspx" />
+    <Content Include="Pages\AdminMenuPage.aspx" />
     <Content Include="Pages\LoginPages.aspx" />
     <Content Include="Content\Style.css" />
+    <Content Include="Pages\WarehousePage.aspx" />
     <Content Include="Stock\magazyny.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -85,12 +87,26 @@
     <Compile Include="Pages\AddPart.aspx.designer.cs">
       <DependentUpon>AddPart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AdminMenuPage.aspx.cs">
+      <DependentUpon>AdminMenuPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminMenuPage.aspx.designer.cs">
+      <DependentUpon>AdminMenuPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoginPages.aspx.cs">
       <DependentUpon>LoginPages.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\LoginPages.aspx.designer.cs">
       <DependentUpon>LoginPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WarehousePage.aspx.cs">
+      <DependentUpon>WarehousePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\WarehousePage.aspx.designer.cs">
+      <DependentUpon>WarehousePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
