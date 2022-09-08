@@ -9,6 +9,10 @@ namespace LoginSystem
 {
     public class MySession
     {
+        private MySession()
+        {
+            IsLogged = false;
+        }
 
         public static MySession Current
         {

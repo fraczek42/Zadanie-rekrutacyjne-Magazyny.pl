@@ -30,9 +30,9 @@
                 <asp:Label ID="Label2" runat="server" Text="Hasło:"></asp:Label>
                 <asp:TextBox CssClass="textbox textboxPass" ID="Txb_pass" runat="server"></asp:TextBox>
             </div>
-            
+            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
             <div class="btn-login">
-                <asp:Button CssClass="btnLogin" ID="Btn_login" runat="server" Text="Zaloguj się!" />
+                <asp:Button CssClass="btnLogin" ID="Btn_login" runat="server" Text="Zaloguj się!" OnClick="Btn_login_Click" />
             </div>
 
         </div>

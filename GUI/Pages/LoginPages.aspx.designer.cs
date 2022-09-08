@@ -60,6 +60,15 @@ namespace GUI.Pages
         protected global::System.Web.UI.WebControls.TextBox Txb_pass;
 
         /// <summary>
+        /// Kontrolka Label3.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
         /// Kontrolka Btn_login.
         /// </summary>
         /// <remarks>

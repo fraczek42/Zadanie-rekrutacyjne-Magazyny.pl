@@ -124,6 +124,10 @@
       <Project>{CB93C627-B262-4724-A507-3C270E83108E}</Project>
       <Name>DBSystem</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LoginSystem\LoginSystem.csproj">
+      <Project>{bcfcd18c-5a99-444b-8ccd-4e4d973114d7}</Project>
+      <Name>LoginSystem</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
