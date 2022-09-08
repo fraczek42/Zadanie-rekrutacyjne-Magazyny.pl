@@ -22,7 +22,7 @@
             </div>
 
             <div class="btn-admin">
-                 <asp:Button CssClass="btnAdmin" ID="Btn_AddPartsPage" runat="server" Text="Dodaj część" />
+                 <asp:Button CssClass="btnAdmin" ID="Btn_AddPartsPage" runat="server" Text="Dodaj część" OnClick="Btn_AddPartsPage_Click" />
             </div>
             <div class="btn-admin">
                  <asp:Button CssClass="btnAdmin" ID="Button1" runat="server" Text="Stan magazyny" />

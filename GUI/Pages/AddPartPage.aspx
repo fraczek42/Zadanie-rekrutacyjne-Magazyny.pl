@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddPart.aspx.cs" Inherits="GUI.Pages.AddPart" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddPartPage.aspx.cs" Inherits="GUI.Pages.AddPart" %>
 
 <!DOCTYPE html>
 

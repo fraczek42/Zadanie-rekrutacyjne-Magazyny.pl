@@ -13,5 +13,10 @@ namespace GUI.Pages
         {
 
         }
+
+        protected void Btn_AddPartsPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/AddPartPage.aspx");
+        }
     }
 }
