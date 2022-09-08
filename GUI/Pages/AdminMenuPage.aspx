@@ -22,16 +22,16 @@
             </div>
 
             <div class="btn-admin">
-                 <asp:Button CssClass="btnAdmin" ID="Btn_AddPartPage" runat="server" Text="Dodaj część" OnClick="Btn_AddPartPage_Click" />
+                 <asp:Button CssClass="btnAdmin" ID="BtnAddPartPage" runat="server" Text="Dodaj część" OnClick="BtnAddPartPage_Click" />
             </div>
             <div class="btn-admin">
-                 <asp:Button CssClass="btnAdmin" ID="Button1" runat="server" Text="Stan magazyny" />
+                 <asp:Button CssClass="btnAdmin" ID="BtnState" runat="server" Text="Stan magazyny" OnClick="BtnState_Click" />
             </div>
             <div class="btn-admin">
-                 <asp:Button CssClass="btnAdmin" ID="Btn_ReceiptOfGoods" runat="server" Text="Kiedy towar został przyjęty" />
+                 <asp:Button CssClass="btnAdmin" ID="BtnReceiptOfGoods" runat="server" Text="Kiedy towar został przyjęty" />
             </div>
             <div class="btn-admin">
-                 <asp:Button CssClass="btnAdmin" ID="Btn_DeliveryOfTheGoods" runat="server" Text="Kiedy towar został wydany" />
+                 <asp:Button CssClass="btnAdmin" ID="BtnDeliveryOfTheGoods" runat="server" Text="Kiedy towar został wydany" />
             </div>
 
         </div>

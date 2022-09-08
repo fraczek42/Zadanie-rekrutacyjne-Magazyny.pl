@@ -29,7 +29,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Opis części : "></asp:Label>
                 <asp:TextBox CssClass="txbDescription" ID="txbDescription" runat="server"></asp:TextBox>
             </div>
-            <div class="btn-add-part">
+            <div class="btn-padding-top">
                 <asp:Button CssClass="btnAdmin" ID="BtnAddPart" runat="server" Text="Dodaj część" OnClick="BtnAddPart_Click" />
             </div>
 

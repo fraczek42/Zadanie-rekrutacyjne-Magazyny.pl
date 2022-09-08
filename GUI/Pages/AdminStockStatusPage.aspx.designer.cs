@@ -11,7 +11,7 @@ namespace GUI.Pages
 {
 
 
-    public partial class AdminMenuPage
+    public partial class AdminStockStatusPage
     {
 
         /// <summary>
@@ -24,39 +24,21 @@ namespace GUI.Pages
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Kontrolka BtnAddPartPage.
+        /// Kontrolka GvStockStatus.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAddPartPage;
+        protected global::System.Web.UI.WebControls.GridView GvStockStatus;
 
         /// <summary>
-        /// Kontrolka BtnState.
+        /// Kontrolka BtnBack.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnState;
-
-        /// <summary>
-        /// Kontrolka BtnReceiptOfGoods.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnReceiptOfGoods;
-
-        /// <summary>
-        /// Kontrolka BtnDeliveryOfTheGoods.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnDeliveryOfTheGoods;
+        protected global::System.Web.UI.WebControls.Button BtnBack;
     }
 }

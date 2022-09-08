@@ -73,6 +73,7 @@
   <ItemGroup>
     <Content Include="Pages\AddPartPage.aspx" />
     <Content Include="Pages\AdminMenuPage.aspx" />
+    <Content Include="Pages\AdminStockStatusPage.aspx" />
     <Content Include="Pages\LoginPage.aspx" />
     <Content Include="Content\Style.css" />
     <Content Include="Pages\WarehousePage.aspx" />
@@ -93,6 +94,13 @@
     </Compile>
     <Compile Include="Pages\AdminMenuPage.aspx.designer.cs">
       <DependentUpon>AdminMenuPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminStockStatusPage.aspx.cs">
+      <DependentUpon>AdminStockStatusPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminStockStatusPage.aspx.designer.cs">
+      <DependentUpon>AdminStockStatusPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
