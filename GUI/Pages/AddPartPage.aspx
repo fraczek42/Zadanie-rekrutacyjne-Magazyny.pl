@@ -21,9 +21,16 @@
                 <h2 class="textDescription">DODAJ CZĘŚĆ
                 </h2>
             </div>
-            <div class ="grid-view">
-                <asp:GridView CssClass="gridView" ID="GvState" runat="server" Height="218px" Width="347px">
-                    </asp:GridView>
+            <div class ="txb-name">
+                <asp:Label ID="Label1" runat="server" Text="Nazwa części : "></asp:Label>
+                <asp:TextBox CssClass="txbName" ID="txbName" runat="server"></asp:TextBox>
+            </div>
+            <div class ="txb-description">
+                <asp:Label ID="Label2" runat="server" Text="Opis części : "></asp:Label>
+                <asp:TextBox CssClass="txbDescription" ID="txbDescription" runat="server"></asp:TextBox>
+            </div>
+            <div class="btn-add-part">
+                <asp:Button CssClass="btnAdmin" ID="BtnAddPart" runat="server" Text="Dodaj część" OnClick="BtnAddPart_Click" />
             </div>
 
         </div>

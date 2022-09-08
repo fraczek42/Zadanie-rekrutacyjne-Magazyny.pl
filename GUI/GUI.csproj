@@ -120,6 +120,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Administration\Administration.csproj">
+      <Project>{E421E025-C046-466A-9FE8-A4BBD4593F10}</Project>
+      <Name>Administration</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DBSystem\DBSystem.csproj">
       <Project>{CB93C627-B262-4724-A507-3C270E83108E}</Project>
       <Name>DBSystem</Name>
