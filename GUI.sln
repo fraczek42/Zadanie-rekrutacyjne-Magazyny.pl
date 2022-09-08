@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSystem", "DBSystem\DBSyst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginSystem", "LoginSystem\LoginSystem.csproj", "{BCFCD18C-5A99-444B-8CCD-4E4D973114D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Administration", "Administration\Administration.csproj", "{E421E025-C046-466A-9FE8-A4BBD4593F10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BCFCD18C-5A99-444B-8CCD-4E4D973114D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCFCD18C-5A99-444B-8CCD-4E4D973114D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCFCD18C-5A99-444B-8CCD-4E4D973114D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E421E025-C046-466A-9FE8-A4BBD4593F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E421E025-C046-466A-9FE8-A4BBD4593F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E421E025-C046-466A-9FE8-A4BBD4593F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E421E025-C046-466A-9FE8-A4BBD4593F10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

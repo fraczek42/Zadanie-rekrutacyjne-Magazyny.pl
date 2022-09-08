@@ -17,12 +17,12 @@
                  <h1 class="text-with-gardient">MAGAZYNY.PL</h1>
             </div>
 
-            <div class="text-admin">
-                <h2 class="textAdmin">STRONA ADMINISTRATORA</h2>
+            <div class="text-description">
+                <h2 class="textDescription">STRONA ADMINISTRATORA</h2>
             </div>
 
             <div class="btn-admin">
-                 <asp:Button CssClass="btnAdmin" ID="Btn_AddPartsPage" runat="server" Text="Dodaj część" OnClick="Btn_AddPartsPage_Click" />
+                 <asp:Button CssClass="btnAdmin" ID="Btn_AddPartPage" runat="server" Text="Dodaj część" OnClick="Btn_AddPartPage_Click" />
             </div>
             <div class="btn-admin">
                  <asp:Button CssClass="btnAdmin" ID="Button1" runat="server" Text="Stan magazyny" />

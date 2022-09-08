@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace GUI.Pages
 {
-    public partial class LoginPages : System.Web.UI.Page
+    public partial class LoginPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

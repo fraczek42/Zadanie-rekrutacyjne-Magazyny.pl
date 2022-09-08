@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="GUI.Pages.LoginPages" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="GUI.Pages.LoginPage" %>
 
 <!DOCTYPE html>
 
@@ -17,8 +17,8 @@
                  <h1 class="text-with-gardient">MAGAZYNY.PL</h1>
             </div>
 
-            <div class="register">
-                <h2>Logowanie</h2>
+            <div class="text-description">
+                <h2 class="textDescription">Logowanie</h2>
             </div>
 
             <div class ="text-box text-box-login">
@@ -30,7 +30,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Hasło:"></asp:Label>
                 <asp:TextBox CssClass="textbox textboxPass" ID="Txb_pass" runat="server"></asp:TextBox>
             </div>
-            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+
             <div class="btn-login">
                 <asp:Button CssClass="btnLogin" ID="Btn_login" runat="server" Text="Zaloguj się!" OnClick="Btn_login_Click" />
             </div>

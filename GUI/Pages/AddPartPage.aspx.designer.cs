@@ -22,5 +22,14 @@ namespace GUI.Pages
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// Kontrolka GvState.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GvState;
     }
 }

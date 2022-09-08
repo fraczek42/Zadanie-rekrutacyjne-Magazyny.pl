@@ -59,7 +59,8 @@
     text-align: center;
     border-radius: 5px;
 }
-h2 {
+.textDescription {
     text-align: center;
     margin: 0px;
+    padding-bottom: 10px;
 }
