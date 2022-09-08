@@ -72,7 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\AddPartPage.aspx" />
+    <Content Include="Pages\AdminDeliveryOfTheGoods.aspx" />
     <Content Include="Pages\AdminMenuPage.aspx" />
+    <Content Include="Pages\AdminReceiptOfGoods.aspx" />
     <Content Include="Pages\AdminStockStatusPage.aspx" />
     <Content Include="Pages\LoginPage.aspx" />
     <Content Include="Content\Style.css" />
@@ -88,12 +90,26 @@
     <Compile Include="Pages\AddPartPage.aspx.designer.cs">
       <DependentUpon>AddPartPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AdminDeliveryOfTheGoods.aspx.cs">
+      <DependentUpon>AdminDeliveryOfTheGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminDeliveryOfTheGoods.aspx.designer.cs">
+      <DependentUpon>AdminDeliveryOfTheGoods.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdminMenuPage.aspx.cs">
       <DependentUpon>AdminMenuPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\AdminMenuPage.aspx.designer.cs">
       <DependentUpon>AdminMenuPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminReceiptOfGoods.aspx.cs">
+      <DependentUpon>AdminReceiptOfGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminReceiptOfGoods.aspx.designer.cs">
+      <DependentUpon>AdminReceiptOfGoods.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminStockStatusPage.aspx.cs">
       <DependentUpon>AdminStockStatusPage.aspx</DependentUpon>

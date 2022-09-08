@@ -23,5 +23,15 @@ namespace GUI.Pages
         {
             Response.Redirect("~/Pages/AdminStockStatusPage.aspx");
         }
+
+        protected void BtnReceiptOfGoods_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/AdminReceiptOfGoods.aspx");
+        }
+
+        protected void BtnDeliveryOfTheGoods_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/AdminDeliveryOfTheGoods.aspx");
+        }
     }
 }
