@@ -21,5 +21,38 @@ namespace Warehouse
 
             return dt;
         }
+        public static int GetIdUser(string lastName)
+        {
+            DataTable dt = new DataTable();
+            string query = "SELECT id_user FROM data_user WHERE last_name_user = @LastName";
+            NpgsqlCommand cmd = new NpgsqlCommand(query);
+            cmd.Parameters.AddWithValue("@LastName", lastName);
+
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
+
+            return (int)dt.Rows[0][0];
+        }
+        public static int GetIdUserByName(string name)
+        {
+            DataTable dt = new DataTable();
+            string query = "SELECT id_user FROM data_user WHERE name_user = @Name";
+            NpgsqlCommand cmd = new NpgsqlCommand(query);
+            cmd.Parameters.AddWithValue("@Name", name);
+
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
+
+            return (int)dt.Rows[0][0];
+        }
+        public static int GetIdPart(string namePart)
+        {
+            DataTable dt = new DataTable();
+            string query = "SELECT id_part FROM part WHERE name_part = @NamePart";
+            NpgsqlCommand cmd = new NpgsqlCommand(query);
+            cmd.Parameters.AddWithValue("@NamePart", namePart);
+
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
+
+            return (int)dt.Rows[0][0];
+        }
     }
 }

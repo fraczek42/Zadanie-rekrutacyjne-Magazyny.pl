@@ -34,9 +34,10 @@
                     </Columns>
                 </asp:GridView>
             </div>
-            <div>
+            <div class="seriesDiv">
                 <span>Numer paczki wydanej : </span>
-                <asp:TextBox ID="TxbSeries" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxbSeries" runat="server" Text="0"></asp:TextBox>
+                <span>(wartość "0" oznacza brak paczki)</span>
             </div>
         </div>
 

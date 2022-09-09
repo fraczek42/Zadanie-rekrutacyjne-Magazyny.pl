@@ -21,8 +21,8 @@ namespace Administration
 
         public void AddPartToDB()
         {
-            string quaery = "INSERT INTO public.part(name_part, description_part) VALUES (@name, @description)";
-            NpgsqlCommand cmd = new NpgsqlCommand(quaery);
+            string query = "INSERT INTO public.part(name_part, description_part) VALUES (@name, @description)";
+            NpgsqlCommand cmd = new NpgsqlCommand(query);
 
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@description", description);
