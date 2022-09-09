@@ -36,23 +36,25 @@
             </div>
             
             <div class="seriesDiv">
-                 <span>Numer paczki wydanej : </span>
-                 <asp:TextBox ID="TxbSeriesOut" runat="server" Text="0"></asp:TextBox>
-                 <span>(wartość "0" oznacza brak paczki)</span>
+                <span>Numer paczki wydanej : </span>
+                <asp:TextBox ID="TxbSeriesOut" runat="server" Text="0"></asp:TextBox>
+                <span>(wartość "0" oznacza brak paczki)</span>
             </div>
             <p></p>
             <div class="addPart">
-                 <span>Wybierz część : </span>
-                 <asp:DropDownList ID="DdlParts" runat="server" >
-                 </asp:DropDownList>
-                 <p>
-                     <span>Numer paczki przyjętej : </span>
-                     <asp:TextBox ID="TxbSeries" runat="server" Text="0"></asp:TextBox>
-                     <span>(wartość "0" oznacza brak paczki)</span>
-                 </p>
-                 <p>
-                     <asp:Button CssClass="btn" ID="btnAddPart" runat="server" Text="Dodaj część na stan magazynu" OnClick="BtnAddPart_Click" />
-                 </p>
+                <span>Wybierz część : </span>
+                <asp:DropDownList ID="DdlParts" runat="server" >
+                </asp:DropDownList>
+                <p>
+                    <span>Numer paczki przyjętej : </span>
+                    <asp:TextBox ID="TxbSeries" runat="server" Text="0"></asp:TextBox>
+                    <span>(wartość "0" oznacza brak paczki)</span>
+                </p>
+                <div class="btn-padding-top">
+                    <p>
+                        <asp:Button CssClass="btn" ID="btnAddPart" runat="server" Text="Dodaj część na stan magazynu" OnClick="BtnAddPart_Click" />
+                    </p>
+                </div>
                 </div>
         </div>
 

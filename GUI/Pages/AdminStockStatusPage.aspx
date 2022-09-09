@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Stan magazynu - Admin</title>
-    <link href="../Content/Style.css" rel="stylesheet" />
+    <link href="../Content/StyleWarehouse.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -33,7 +33,7 @@
                 </asp:GridView>
             </div>
             <div class="btn-padding-top">
-                <asp:Button CssClass="btnAdmin" ID="BtnBack" runat="server" Text="Cofnij" OnClick="BtnBack_Click" />
+                <asp:Button CssClass="btn" ID="BtnBack" runat="server" Text="Cofnij" OnClick="BtnBack_Click" />
             </div>
         </div>
 
