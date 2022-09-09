@@ -29,7 +29,7 @@
                         <asp:BoundField HeaderText="Seria" DataField="series" SortExpression="series" />
                         <asp:BoundField HeaderText="Data przyjęcia na magazyn" DataField="date_take" SortExpression="date_take" DataFormatString="{0:dd-MM-yyyy}" />
                         <asp:BoundField HeaderText="Imie osoby przyjmującej na magazyn" DataField="name_user" SortExpression="name_user" />   
-                        <asp:BoundField HeaderText="Nazwisko osoba przyjmującej na magazyn" DataField="last_name_user" SortExpression="last_name_user" />  
+                        <asp:BoundField HeaderText="Nazwisko osoba przyjmującej na magazyn" DataField="last_name_user" SortExpression="last_name_user" /> 
                     </Columns>
                 </asp:GridView>
             </div>

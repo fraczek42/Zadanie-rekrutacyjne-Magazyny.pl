@@ -71,6 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\StyleWarehouse.css" />
     <Content Include="Pages\AddPartPage.aspx" />
     <Content Include="Pages\AdminDeliveryOfTheGoods.aspx" />
     <Content Include="Pages\AdminMenuPage.aspx" />
@@ -155,6 +156,10 @@
     <ProjectReference Include="..\LoginSystem\LoginSystem.csproj">
       <Project>{bcfcd18c-5a99-444b-8ccd-4e4d973114d7}</Project>
       <Name>LoginSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Warehouse\Warehouse.csproj">
+      <Project>{259C775A-FAE1-4C43-A279-F792AFDB6BFD}</Project>
+      <Name>Warehouse</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,44 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('../Stock/magazyny.jpg');
+    background-size: cover;
+    color: white;
+}
+.menubox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 600px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background: rgb(0,0,0,0.9);
+    border-radius: 20px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.text-with-gardient {
+    background: linear-gradient(318deg, rgba(34,53,195,1) 0%, rgba(219,142,40,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.textDescription {
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.gridV {
+    overflow-y: scroll;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 10px;
+}
