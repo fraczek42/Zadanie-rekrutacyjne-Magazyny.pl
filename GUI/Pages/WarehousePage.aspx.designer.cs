@@ -33,6 +33,24 @@ namespace GUI.Pages
         protected global::System.Web.UI.WebControls.GridView GvWarehouse;
 
         /// <summary>
+        /// Kontrolka TxbSeriesOut.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxbSeriesOut;
+
+        /// <summary>
+        /// Kontrolka DdlParts.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DdlParts;
+
+        /// <summary>
         /// Kontrolka TxbSeries.
         /// </summary>
         /// <remarks>
@@ -40,5 +58,14 @@ namespace GUI.Pages
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxbSeries;
+
+        /// <summary>
+        /// Kontrolka btnAddPart.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddPart;
     }
 }

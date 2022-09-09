@@ -54,5 +54,15 @@ namespace Warehouse
 
             return (int)dt.Rows[0][0];
         }
+        public static DataTable LoadParts()
+        {
+            DataTable dt = new DataTable();
+            string query = "SELECT id_part, name_part FROM part";
+            NpgsqlCommand cmd = new NpgsqlCommand(query);
+
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
+
+            return dt;
+        }
     }
 }

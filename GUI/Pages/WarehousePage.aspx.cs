@@ -16,6 +16,15 @@ namespace GUI.Pages
 
             GvWarehouse.DataSource = State.LoadState();
             GvWarehouse.DataBind();
+
+            if (!IsPostBack)
+            {
+                DdlParts.DataSource = State.LoadParts();
+                DdlParts.DataValueField = "id_part";
+                DdlParts.DataTextField = "name_part";
+                DdlParts.DataBind();
+            }
+            
         }
 
         protected void GvWarehouse_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -27,7 +36,7 @@ namespace GUI.Pages
                 int id = Convert.ToInt32(row.Cells[0].Text);
 
                 int id_part = State.GetIdPart(row.Cells[1].Text);
-                int series = Convert.ToInt32(TxbSeries.Text);
+                int series = Convert.ToInt32(TxbSeriesOut.Text);
                 int lastNameTake = State.GetIdUser(row.Cells[5].Text);
                 int lastNameSpend = Convert.ToInt32(State.GetIdUserByName(LoginSystem.MySession.Current.Name.ToString()));
                 DateTime dateResult;              
@@ -40,8 +49,23 @@ namespace GUI.Pages
 
                 SpendParts.SpendPart(id);
 
-                Response.Redirect("~/Pages/WarehousePage.aspx");
+                GvWarehouse.DataSource = State.LoadState();
+                GvWarehouse.DataBind();
             }
+        }
+
+        protected void BtnAddPart_Click(object sender, EventArgs e)
+        {
+            int idPart = Convert.ToInt32(DdlParts.SelectedValue);
+            int series = Convert.ToInt32(TxbSeries.Text);
+            int idPerson = Convert.ToInt32(State.GetIdUserByName(LoginSystem.MySession.Current.Name.ToString()));
+            string dateTake = DateTime.Now.ToString("yyyy-MM-dd");
+
+            AddParts addParts = new AddParts(idPart, series, idPerson, dateTake);
+            addParts.AddPartsToDB();
+
+            GvWarehouse.DataSource = State.LoadState();
+            GvWarehouse.DataBind();
         }
     }
 }
