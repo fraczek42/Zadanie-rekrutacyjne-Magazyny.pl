@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoginSystem;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -13,6 +14,10 @@ namespace GUI.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!LogSys.ChceckIfLogged())
+                Response.Redirect("~/Pages/LoginPage.aspx");
+
+
             if (!IsPostBack)
             {
                 GvWarehouse.DataSource = State.LoadState();

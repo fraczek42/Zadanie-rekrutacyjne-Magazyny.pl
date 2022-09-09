@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoginSystem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,8 @@ namespace GUI.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!LogSys.ChceckIfLogged())
+                Response.Redirect("~/Pages/LoginPage.aspx");
         }
 
         protected void BtnAddPartPage_Click(object sender, EventArgs e)

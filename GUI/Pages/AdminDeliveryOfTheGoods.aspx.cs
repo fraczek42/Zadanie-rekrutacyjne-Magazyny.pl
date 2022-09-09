@@ -1,4 +1,5 @@
 ﻿using Administration;
+using LoginSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,9 @@ namespace GUI.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!LogSys.ChceckIfLogged())
+                Response.Redirect("~/Pages/LoginPage.aspx");
+
             if (!IsPostBack)
             {
                 GvDeliveryOfTheGoods.DataSource = StockStatus.LoadDeliveryOfTheGoods();
