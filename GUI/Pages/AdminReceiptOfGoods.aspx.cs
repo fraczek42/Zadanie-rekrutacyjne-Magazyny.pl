@@ -12,8 +12,11 @@ namespace GUI.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GvReceiptOfGoods.DataSource = StockStatus.LoadReceiptOfGoods();
-            GvReceiptOfGoods.DataBind();
+            if (!IsPostBack)
+            {
+                GvReceiptOfGoods.DataSource = StockStatus.LoadReceiptOfGoods();
+                GvReceiptOfGoods.DataBind();
+            }
         }
 
         protected void BtnBack_Click(object sender, EventArgs e)

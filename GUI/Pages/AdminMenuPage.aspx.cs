@@ -33,5 +33,10 @@ namespace GUI.Pages
         {
             Response.Redirect("~/Pages/AdminDeliveryOfTheGoods.aspx");
         }
+
+        protected void BtnStockStatus_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/WarehousePage.aspx");
+        }
     }
 }

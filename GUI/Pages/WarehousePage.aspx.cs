@@ -13,12 +13,12 @@ namespace GUI.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            GvWarehouse.DataSource = State.LoadState();
-            GvWarehouse.DataBind();
-
             if (!IsPostBack)
             {
+                GvWarehouse.DataSource = State.LoadState();
+                GvWarehouse.DataBind();
+
+            
                 DdlParts.DataSource = State.LoadParts();
                 DdlParts.DataValueField = "id_part";
                 DdlParts.DataTextField = "name_part";

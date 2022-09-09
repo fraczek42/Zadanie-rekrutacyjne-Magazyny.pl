@@ -20,7 +20,9 @@
             <div class="text-description">
                 <h2 class="textDescription">STRONA ADMINISTRATORA</h2>
             </div>
-
+            <div class="btn-admin">
+                 <asp:Button CssClass="btnAdmin" ID="BtnStockStatus" runat="server" Text="Magazyn" OnClick="BtnStockStatus_Click" />
+            </div>
             <div class="btn-admin">
                  <asp:Button CssClass="btnAdmin" ID="BtnAddPartPage" runat="server" Text="Dodaj część" OnClick="BtnAddPartPage_Click" />
             </div>
